@@ -1,4 +1,5 @@
-import user from '../../data/user.json';
+// import user from '../../data/user.json';
+import user from 'data/user.json';
 
 // {
 /* <Profile
@@ -39,7 +40,7 @@ export const Profile = ({
         {/* </div> */}
       </Description>
 
-      <ListsStats>
+      <ListStats>
         {/* <ul class="stats"> */}
         <li>
           <Label>Followers</Label>
@@ -60,7 +61,7 @@ export const Profile = ({
           {/* <span class="quantity">3000</span> */}
         </li>
         {/* </ul> */}
-      </ListsStats>
+      </ListStats>
     </Container>
     // {/* </div>; */}
   );
