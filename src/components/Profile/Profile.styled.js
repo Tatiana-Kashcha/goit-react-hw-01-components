@@ -12,7 +12,7 @@ export const Tag = styled.p``;
 
 export const Location = styled.p``;
 
-export const ListStats = styled.ul``;
+export const List = styled.ul``;
 
 export const ListItems = styled.li``;
 

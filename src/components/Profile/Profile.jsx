@@ -5,7 +5,7 @@ import {
   Name,
   Tag,
   Location,
-  ListStats,
+  List,
   ListItems,
   Label,
   Quantity,
@@ -27,7 +27,7 @@ export const Profile = ({
         <Location>{location}</Location>
       </Description>
 
-      <ListStats>
+      <List>
         <ListItems>
           <Label>Followers</Label>
           <Quantity>{followers}</Quantity>
@@ -42,7 +42,7 @@ export const Profile = ({
           <Label>Likes</Label>
           <Quantity>{likes}</Quantity>
         </ListItems>
-      </ListStats>
+      </List>
     </Container>
   );
 };
