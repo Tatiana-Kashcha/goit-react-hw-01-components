@@ -1,4 +1,3 @@
-import { number } from 'prop-types';
 import * as s from './Profile.styled';
 import PropTypes from 'prop-types';
 
@@ -42,6 +41,12 @@ Profile.PropTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string,
-  //   avatar: PropTypes.element,
-  //   stats: PropTypes.object,
+  avatar: PropTypes.any,
+  stats: PropTypes.objectOf(
+    PropTypes.shape({
+      followers: PropTypes.number,
+      views: PropTypes.number,
+      likes: PropTypes.number,
+    })
+  ),
 };
