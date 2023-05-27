@@ -1,4 +1,5 @@
 import * as s from './Profile.styled';
+import PropTypes from 'prop-types';
 
 export const Profile = ({
   username,
