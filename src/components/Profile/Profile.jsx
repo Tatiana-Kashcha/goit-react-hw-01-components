@@ -1,15 +1,4 @@
-import {
-  Container,
-  Description,
-  Avatar,
-  Name,
-  Tag,
-  Location,
-  List,
-  ListItems,
-  Label,
-  Quantity,
-} from './Profile.styled';
+import * as s from './Profile.styled';
 
 export const Profile = ({
   username,
@@ -19,30 +8,30 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <Container>
-      <Description>
-        <Avatar src={avatar} alt="User avatar" />
-        <Name>{username}</Name>
-        <Tag>@{tag}</Tag>
-        <Location>{location}</Location>
-      </Description>
+    <s.Container>
+      <s.Description>
+        <s.Avatar src={avatar} alt="User avatar" />
+        <s.Name>{username}</s.Name>
+        <s.Tag>@{tag}</s.Tag>
+        <s.Location>{location}</s.Location>
+      </s.Description>
 
-      <List>
-        <ListItems>
-          <Label>Followers</Label>
-          <Quantity>{followers}</Quantity>
-        </ListItems>
+      <s.List>
+        <s.ListItems>
+          <s.Label>Followers</s.Label>
+          <s.Quantity>{followers}</s.Quantity>
+        </s.ListItems>
 
-        <ListItems>
-          <Label>Views</Label>
-          <Quantity>{views}</Quantity>
-        </ListItems>
+        <s.ListItems>
+          <s.Label>Views</s.Label>
+          <s.Quantity>{views}</s.Quantity>
+        </s.ListItems>
 
-        <ListItems>
-          <Label>Likes</Label>
-          <Quantity>{likes}</Quantity>
-        </ListItems>
-      </List>
-    </Container>
+        <s.ListItems>
+          <s.Label>Likes</s.Label>
+          <s.Quantity>{likes}</s.Quantity>
+        </s.ListItems>
+      </s.List>
+    </s.Container>
   );
 };
