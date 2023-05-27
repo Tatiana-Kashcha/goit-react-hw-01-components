@@ -1,3 +1,4 @@
+import { number } from 'prop-types';
 import * as s from './Profile.styled';
 import PropTypes from 'prop-types';
 
@@ -35,4 +36,12 @@ export const Profile = ({
       </s.List>
     </s.Container>
   );
+};
+
+Profile.PropTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string,
+  //   avatar: PropTypes.element,
+  //   stats: PropTypes.object,
 };
