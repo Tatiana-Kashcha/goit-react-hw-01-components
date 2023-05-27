@@ -6,8 +6,6 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 300px;
-  box-shadow: 0px 10px 10px rgba(245, 245, 247, 0.1);
-  border-radius: 16px;
 `;
 
 export const Description = styled.div`
@@ -40,6 +38,7 @@ export const List = styled.ul`
   border: 1px solid rgb(219, 216, 216);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  /* box-shadow: 0px 10px 10px rgba(245, 245, 247, 0.1); */
 `;
 
 export const ListItems = styled.li`
@@ -49,7 +48,9 @@ export const ListItems = styled.li`
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100px;
-  border-right: 1px solid rgb(219, 216, 216);
+  &:not(:last-child) {
+    border-right: 1px solid rgb(219, 216, 216);
+  }
 `;
 
 export const Label = styled.span``;
