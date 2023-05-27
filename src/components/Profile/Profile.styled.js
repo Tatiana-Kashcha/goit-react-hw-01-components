@@ -20,16 +20,26 @@ export const Description = styled.div`
 `;
 
 export const Avatar = styled.img`
-  width: 100px;
+  width: 130px;
   border-radius: 100%;
   background-color: rgb(227 244 244);
+  margin-bottom: 20px;
 `;
 
-export const Name = styled.p``;
+export const Name = styled.p`
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 22px;
+`;
 
-export const Tag = styled.p``;
+export const Tag = styled.p`
+  color: gray;
+  margin-bottom: 10px;
+`;
 
-export const Location = styled.p``;
+export const Location = styled.p`
+  color: gray;
+`;
 
 export const List = styled.ul`
   display: flex;
@@ -38,7 +48,6 @@ export const List = styled.ul`
   border: 1px solid rgb(219, 216, 216);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  /* box-shadow: 0px 10px 10px rgba(245, 245, 247, 0.1); */
 `;
 
 export const ListItems = styled.li`
@@ -53,6 +62,10 @@ export const ListItems = styled.li`
   }
 `;
 
-export const Label = styled.span``;
+export const Label = styled.span`
+  color: gray;
+`;
 
-export const Quantity = styled.span``;
+export const Quantity = styled.span`
+  font-weight: bold;
+`;
