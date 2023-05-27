@@ -42,9 +42,5 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string,
   avatar: PropTypes.string,
-  stats: PropTypes.objectOf({
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
-  }),
+  stats: PropTypes.objectOf(PropTypes.number),
 };
