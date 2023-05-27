@@ -37,16 +37,14 @@ export const Profile = ({
   );
 };
 
-Profile.PropTypes = {
+Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string,
-  avatar: PropTypes.any,
-  stats: PropTypes.objectOf(
-    PropTypes.shape({
-      followers: PropTypes.number,
-      views: PropTypes.number,
-      likes: PropTypes.number,
-    })
-  ),
+  avatar: PropTypes.string,
+  stats: PropTypes.objectOf({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
 };
