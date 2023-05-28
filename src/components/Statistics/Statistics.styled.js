@@ -10,6 +10,7 @@ export const Container = styled.div`
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  width: 500px;
   h2 {
     color: gray;
     background-color: #ffffff;
@@ -41,16 +42,16 @@ export const ListItems = styled.li`
 `;
 
 export const Id = styled.span`
-  color: gray;
+  color: #ffffff;
   margin-bottom: 5px;
 `;
 
 export const Label = styled.span`
-  color: gray;
+  color: #ffffff;
   margin-bottom: 5px;
 `;
 
 export const Percentage = styled.span`
-  color: gray;
+  color: #ffffff;
   font-size: 22px;
 `;
