@@ -17,6 +17,8 @@ export const Container = styled.div`
     font-weight: bold;
     font-size: 22px;
     text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
   }
 `;
 
