@@ -31,7 +31,7 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
-  background-color: ${getRandomHexColor()};
+  /* background-color: ${getRandomHexColor()}; */
   text-align: center;
   flex-direction: column;
   display: flex;
