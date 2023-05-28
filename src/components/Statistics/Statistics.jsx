@@ -6,11 +6,13 @@ export const Statistics = ({ title, stats }) => {
       <s.Container>
         {title && <h2>{title}</h2>}
         <s.List>
-          <s.ListItems>
-            <s.Id>{stats[idx].id}</s.Id>
-            <s.Label>{stats[idx].label}</s.Label>
-            <s.Percentage>{stats[idx].percentage}%</s.Percentage>
-          </s.ListItems>
+          {stats.map(stat => (
+            <s.ListItems key={stat.id}>
+              <s.Id>{stat.id}</s.Id>
+              <s.Label>{stat.label}</s.Label>
+              <s.Percentage>{stat.percentage}%</s.Percentage>
+            </s.ListItems>
+          ))}
         </s.List>
       </s.Container>
     </s.Section>
