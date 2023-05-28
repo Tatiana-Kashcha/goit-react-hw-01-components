@@ -5,7 +5,13 @@ export const Statistics = ({ title, stats }) => {
     <s.Section>
       <s.Container>
         {title && <h2>{title}</h2>}
-        <s.List></s.List>
+        <s.List>
+          <s.ListItems>
+            <s.Id>{stats.id}</s.Id>
+            <s.Label>{stats.label}</s.Label>
+            <s.Percentage>{stats.percentage}%</s.Percentage>
+          </s.ListItems>
+        </s.List>
       </s.Container>
     </s.Section>
   );
