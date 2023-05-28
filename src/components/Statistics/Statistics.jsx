@@ -12,7 +12,6 @@ export const Statistics = ({ title, stats }) => {
               key={stat.id}
               style={{ backgroundColor: `${getRandomHexColor()}` }}
             >
-              <s.Id>{stat.id}</s.Id>
               <s.Label>{stat.label}</s.Label>
               <s.Percentage>{stat.percentage}%</s.Percentage>
             </s.ListItems>

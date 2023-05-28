@@ -19,8 +19,8 @@ export const Container = styled.div`
     font-weight: bold;
     font-size: 22px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 `;
 
@@ -42,11 +42,6 @@ export const ListItems = styled.li`
   &:not(:last-child) {
     border-right: 1px solid rgb(219, 216, 216);
   }
-`;
-
-export const Id = styled.span`
-  color: #ffffff;
-  margin-bottom: 5px;
 `;
 
 export const Label = styled.span`
