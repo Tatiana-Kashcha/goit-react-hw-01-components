@@ -28,6 +28,10 @@ Statistics.propTypes = {
   stats: PropTypes.arrayOf(PropTypes.object),
 };
 
+/**
+ * Генерує рандомне число, та перетворює його на значення кольору у форматі hex
+ * @returns значення кольору у форматі hex
+ */
 export function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
