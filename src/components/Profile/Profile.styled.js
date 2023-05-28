@@ -64,6 +64,7 @@ export const ListItems = styled.li`
 
 export const Label = styled.span`
   color: gray;
+  margin-bottom: 5px;
 `;
 
 export const Quantity = styled.span`

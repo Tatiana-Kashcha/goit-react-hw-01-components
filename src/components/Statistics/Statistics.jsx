@@ -7,9 +7,9 @@ export const Statistics = ({ title, stats }) => {
         {title && <h2>{title}</h2>}
         <s.List>
           <s.ListItems>
-            <s.Id>{stats.id}</s.Id>
-            <s.Label>{stats.label}</s.Label>
-            <s.Percentage>{stats.percentage}%</s.Percentage>
+            <s.Id>{stats[0].id}</s.Id>
+            <s.Label>{stats[0].label}</s.Label>
+            <s.Percentage>{stats[0].percentage}%</s.Percentage>
           </s.ListItems>
         </s.List>
       </s.Container>

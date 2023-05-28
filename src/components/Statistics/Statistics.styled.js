@@ -10,15 +10,15 @@ export const Container = styled.div`
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffffff;
   h2 {
     color: gray;
+    background-color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 22px;
     text-align: center;
     padding-top: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 `;
 
@@ -42,12 +42,15 @@ export const ListItems = styled.li`
 
 export const Id = styled.span`
   color: gray;
+  margin-bottom: 5px;
 `;
 
 export const Label = styled.span`
   color: gray;
+  margin-bottom: 5px;
 `;
 
 export const Percentage = styled.span`
   color: gray;
+  font-size: 22px;
 `;
