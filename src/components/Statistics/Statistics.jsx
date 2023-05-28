@@ -1,24 +1,18 @@
-const Mailbox = ({ unreadMessages }) => {
-  return (
-    <div>
-      <h1>Hello!</h1>
-      {unreadMessages.length > 0 && (
-        <p>You have {unreadMessages.length} unread messages.</p>
-      )}
-    </div>
-  );
-};
+import * as s from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section class="statistics">
-      {title(<h2 class="title">Upload stats</h2>)}
-      <ul class="stat-list"></ul>
-    </section>
+    <s.Section>
+      <s.Container>
+        {title && <h2>{title}</h2>}
+        <s.List></s.List>
+      </s.Container>
+    </s.Section>
   );
 };
 
-<section class="statistics">
+// {
+/* <section class="statistics">
   <h2 class="title">Upload stats</h2>
 
   <ul class="stat-list">
@@ -39,4 +33,5 @@ export const Statistics = ({ title, stats }) => {
       <span class="percentage">12%</span>
     </li>
   </ul>
-</section>;
+</section>; */
+// }

@@ -14,8 +14,10 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      {/* Рендер з заголовком h2*/}
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+      {/* Рендер без заголовка h2*/}
+      {/* <Statistics stats={data} />  */}
     </>
   );
 };
