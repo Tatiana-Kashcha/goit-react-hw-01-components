@@ -1,4 +1,5 @@
 import * as s from './Statistics.styled';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -20,6 +21,11 @@ export const Statistics = ({ title, stats }) => {
       </s.Container>
     </s.Section>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.object),
 };
 
 export function getRandomHexColor() {

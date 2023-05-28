@@ -17,7 +17,7 @@ export const App = () => {
       {/* Рендер з заголовком h2*/}
       <Statistics title="Upload stats" stats={data} />
       {/* Рендер без заголовка h2*/}
-      {/* <Statistics stats={data} />  */}
+      {/* <Statistics stats={data} /> */}
     </>
   );
 };

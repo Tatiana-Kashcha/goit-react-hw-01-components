@@ -32,6 +32,7 @@ export const List = styled.ul`
 
 export const ListItems = styled.li`
   /* background-color: ${getRandomHexColor()}; */
+  /* так color одинаковий для всіх li*/
   text-align: center;
   flex-direction: column;
   display: flex;
