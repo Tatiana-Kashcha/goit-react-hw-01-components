@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { getRandomHexColor } from './Statistics';
 
 export const Section = styled.section`
   padding-top: 40px;
@@ -30,6 +31,7 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
+  background-color: ${getRandomHexColor()};
   text-align: center;
   flex-direction: column;
   display: flex;
