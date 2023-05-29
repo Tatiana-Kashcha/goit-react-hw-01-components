@@ -2,25 +2,27 @@ import * as s from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <s.Table>
-      <s.Thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </s.Thead>
-
-      <s.Tbody>
-        {items.map(item => (
-          <tr key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+    <s.Container>
+      <s.Table>
+        <s.Thead>
+          <tr>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Currency</th>
           </tr>
-        ))}
-      </s.Tbody>
-    </s.Table>
+        </s.Thead>
+
+        <s.Tbody>
+          {items.map(item => (
+            <tr key={item.id}>
+              <s.Type>{item.type}</s.Type>
+              <td>{item.amount}</td>
+              <td>{item.currency}</td>
+            </tr>
+          ))}
+        </s.Tbody>
+      </s.Table>
+    </s.Container>
   );
 };
 
