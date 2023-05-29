@@ -24,8 +24,8 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       {/* Рендер без заголовка h2*/}
       {/* <Statistics stats={data} /> */}
-      <FriendList friends={friends} />;
-      <TransactionHistory items={transactions} />;
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
