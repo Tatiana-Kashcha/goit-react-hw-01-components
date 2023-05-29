@@ -13,6 +13,13 @@ export const Avatar = styled.img`
   border-radius: 4px;
 `;
 
-export const Name = styled.p``;
+export const Name = styled.p`
+  font-weight: bold;
+`;
 
-export const Status = styled.span``;
+export const Status = styled.span`
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: rgb(34 161 161);
+`;
