@@ -30,8 +30,6 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
-  /* background-color: ${getRandomHexColor()}; */
-  /* а так color одинаковий для всіх li*/
   text-align: center;
   flex-direction: column;
   display: flex;
@@ -40,6 +38,22 @@ export const ListItems = styled.li`
   width: 100px;
   &:not(:last-child) {
     border-right: 1px solid rgb(219, 216, 216);
+  }
+  /* Перший варіант отримання кольору фону */
+  &:nth-child(1) {
+    background-color: ${getRandomHexColor()};
+  }
+  &:nth-child(2) {
+    background-color: ${getRandomHexColor()};
+  }
+  &:nth-child(3) {
+    background-color: ${getRandomHexColor()};
+  }
+  &:nth-child(4) {
+    background-color: ${getRandomHexColor()};
+  }
+  &:nth-child(5) {
+    background-color: ${getRandomHexColor()};
   }
 `;
 

@@ -10,7 +10,8 @@ export const Statistics = ({ title, stats }) => {
           {stats.map(stat => (
             <s.ListItems
               key={stat.id}
-              style={{ backgroundColor: `${getRandomHexColor()}` }}
+              // Другий варіант отримання кольору фону
+              // style={{ backgroundColor: `${getRandomHexColor()}` }}
             >
               <s.Label>{stat.label}</s.Label>
               <s.Percentage>{stat.percentage}%</s.Percentage>
