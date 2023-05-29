@@ -15,6 +15,7 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid rgb(219, 216, 216);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 `;
