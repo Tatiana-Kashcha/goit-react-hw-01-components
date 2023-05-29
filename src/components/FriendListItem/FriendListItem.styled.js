@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-export const ListItems = styled.li``;
+export const ListItems = styled.li`
+  display: flex;
+  align-items: center;
+`;
 
 export const Avatar = styled.img`
   border-radius: 4px;
