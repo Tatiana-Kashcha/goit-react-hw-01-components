@@ -9,7 +9,8 @@ export const Container = styled.div`
 `;
 
 export const Table = styled.table`
-  padding-top: 40px;
+  border-collapse: collapse;
+  margin-top: 40px;
   width: 100%;
   text-align: center;
 `;
@@ -22,6 +23,7 @@ export const Thead = styled.thead`
   th {
     padding-top: 10px;
     padding-bottom: 10px;
+    border: 1px solid rgb(219, 216, 216);
   }
 `;
 
@@ -37,6 +39,7 @@ export const Tbody = styled.tbody`
     padding-bottom: 10px;
     color: gray;
     font-size: 14px;
+    border: 1px solid rgb(219, 216, 216);
   }
 `;
 
