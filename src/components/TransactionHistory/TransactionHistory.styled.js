@@ -11,6 +11,7 @@ export const Container = styled.div`
 export const Table = styled.table`
   border-collapse: collapse;
   margin-top: 40px;
+  margin-bottom: 40px;
   width: 100%;
   text-align: center;
 `;
