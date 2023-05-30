@@ -40,8 +40,8 @@ export const ListItems = styled.li`
   &:not(:last-child) {
     border-right: 1px solid rgb(219, 216, 216);
   }
-  /* Перший варіант отримання кольору фону */
-  &:nth-child(1) {
+  /* Другий варіант отримання кольору фону */
+  /* &:nth-child(1) {
     background-color: ${getRandomHexColor()};
   }
   &:nth-child(2) {
@@ -55,7 +55,7 @@ export const ListItems = styled.li`
   }
   &:nth-child(5) {
     background-color: ${getRandomHexColor()};
-  }
+  } */
 `;
 
 export const Label = styled.span`
