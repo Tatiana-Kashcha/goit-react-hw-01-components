@@ -10,7 +10,9 @@ export const ListItems = styled.li`
     0px 2px 1px rgba(0, 0, 0, 0.2);
 `;
 
-export const Avatar = styled.img``;
+export const Avatar = styled.img`
+  margin-right: 10px;
+`;
 
 export const Name = styled.p`
   font-size: 20px;
@@ -20,6 +22,7 @@ export const Name = styled.p`
 export const Status = styled.span`
   width: 15px;
   height: 15px;
+  margin-right: 10px;
   border-radius: 100%;
-  background-color: rgb(34 161 161);
+  background-color: ${({ status }) => (status ? 'green' : 'red')};
 `;
