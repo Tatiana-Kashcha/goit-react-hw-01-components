@@ -9,18 +9,18 @@ export const Container = styled.div`
 `;
 
 export const Table = styled.table`
-  border-collapse: collapse;
+  width: 100%;
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 100%;
   text-align: center;
+  border-collapse: collapse;
 `;
 
 export const Thead = styled.thead`
-  background-color: rgb(58 190 233);
-  color: #ffffff;
   font-size: 14px;
+  color: #ffffff;
   text-transform: uppercase;
+  background-color: rgb(58 190 233);
   th {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -38,8 +38,8 @@ export const Tbody = styled.tbody`
   td {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: gray;
     font-size: 14px;
+    color: gray;
     border: 1px solid rgb(219, 216, 216);
   }
 `;

@@ -13,14 +13,14 @@ export const Container = styled.div`
   margin-right: auto;
   width: 500px;
   h2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 22px;
+    font-weight: bold;
     color: gray;
     background-color: #ffffff;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 22px;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
 `;
 
@@ -31,12 +31,12 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
-  text-align: center;
-  flex-direction: column;
-  display: flex;
+  width: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   &:not(:last-child) {
     border-right: 1px solid rgb(219, 216, 216);
   }
@@ -64,6 +64,6 @@ export const Label = styled.span`
 `;
 
 export const Percentage = styled.span`
-  color: #ffffff;
   font-size: 22px;
+  color: #ffffff;
 `;

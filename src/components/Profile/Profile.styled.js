@@ -9,12 +9,12 @@ export const Container = styled.div`
 `;
 
 export const Description = styled.div`
-  background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #ffffff;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border: 1px solid rgb(219, 216, 216);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -22,15 +22,15 @@ export const Description = styled.div`
 
 export const Avatar = styled.img`
   width: 130px;
+  margin-bottom: 20px;
   border-radius: 100%;
   background-color: rgb(227 244 244);
-  margin-bottom: 20px;
 `;
 
 export const Name = styled.p`
-  margin-bottom: 10px;
   font-weight: bold;
   font-size: 22px;
+  margin-bottom: 10px;
 `;
 
 export const Tag = styled.p`
@@ -43,21 +43,21 @@ export const Location = styled.p`
 `;
 
 export const List = styled.ul`
+  background-color: rgb(227 244 244);
   display: flex;
   justify-content: space-around;
-  background-color: rgb(227 244 244);
   border: 1px solid rgb(219, 216, 216);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 `;
 
 export const ListItems = styled.li`
-  text-align: center;
-  flex-direction: column;
-  display: flex;
+  width: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   &:not(:last-child) {
     border-right: 1px solid rgb(219, 216, 216);
   }
