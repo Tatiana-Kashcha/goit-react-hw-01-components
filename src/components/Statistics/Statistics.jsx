@@ -7,14 +7,13 @@ export const Statistics = ({ title, stats }) => {
       <s.Container>
         {title && <h2>{title}</h2>}
         <s.List>
-          {stats.map(stat => (
+          {stats.map(({ id, label, percentage }) => (
             <s.ListItems
-              key={stat.id}
-              // Перший варіант отримання кольору фону
+              key={id}
               style={{ backgroundColor: `${getRandomHexColor()}` }}
             >
-              <s.Label>{stat.label}</s.Label>
-              <s.Percentage>{stat.percentage}%</s.Percentage>
+              <s.Label>{label}</s.Label>
+              <s.Percentage>{percentage}%</s.Percentage>
             </s.ListItems>
           ))}
         </s.List>
@@ -25,7 +24,15 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf(PropTypes.object).isRequired,
+  data: PropTypes.shape({
+    stats: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+      })
+    ),
+  }),
 };
 
 /**
