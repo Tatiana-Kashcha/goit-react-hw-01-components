@@ -38,17 +38,13 @@ export const Profile = ({
 };
 
 Profile.propTypes = {
-  user: PropTypes.shape({
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string,
-    avatar: PropTypes.string,
-    stats: PropTypes.objectOf(
-      PropTypes.shape({
-        followers: PropTypes.number.isRequired,
-        views: PropTypes.number.isRequired,
-        likes: PropTypes.number.isRequired,
-      })
-    ),
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }),
 };
